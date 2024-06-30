@@ -1,0 +1,230 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "BillApp",
+    "collectionId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+    "dateExported": "2024-06-19T14:02:01.094Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "Bills",
+            "containerId": "",
+            "created": "2024-06-14T12:04:53.001Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "Clients",
+            "containerId": "",
+            "created": "2024-06-19T07:21:15.892Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9e7bba5c-cea9-4878-8808-eaa1adc5e5ed",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "/bills",
+            "url": "{{url}}/bills",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-14T12:05:18.635Z",
+            "modified": "2024-06-14T12:07:31.826Z",
+            "headers": []
+        },
+        {
+            "_id": "d26a65ff-0d1a-4a7c-ba19-d0ac633c663a",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "/bills/:id",
+            "url": "{{url}}/bills/{id}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-14T12:06:03.868Z",
+            "modified": "2024-06-19T07:22:22.035Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "a07d9af7-f857-40d0-a014-b038dd40fa5e",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "71b3b230-3d92-4415-8525-86b2f9cbfc83",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "/bills",
+            "url": "{{url}}/bills",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-14T12:06:07.081Z",
+            "modified": "2024-06-19T13:16:27.799Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n  \"billnum\": 97515,\n  \"description\": \"Fantastique Plastique Thon\",\n  \"date\": \"2023-07-02\",\n  \"client\": {\n    \"id\": \"909f7512-2e26-45b8-96e5-0b83e3438503\",\n    \"firstName\": \"Félicie\",\n    \"lastName\": \"Noel\"\n  },\n  \"prestations\": [\n    {\n      \"description\": \"Sans marque Acier Savon\",\n      \"qty\": 2,\n      \"price\": 2113\n    },\n    {\n      \"description\": \"Sans marque Béton Poisson\",\n      \"qty\": 2,\n      \"price\": 1091\n    },\n    {\n      \"description\": \"Incroyable Bronze Fromage\",\n      \"qty\": 2,\n      \"price\": 3209\n    }\n  ],\n  \"discount\": 0,\n  \"paid\": 10882,\n  \"totalHT\": 12826,\n  \"tva\": 20,\n  \"totalTTC\": 4509\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d8b8a14e-295b-480d-8550-a451dc1d8c93",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "/bills/:id",
+            "url": "{{url}}/bills/{id}",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-06-14T12:06:22.018Z",
+            "modified": "2024-06-19T08:06:00.353Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "a07d9af7-f857-40d0-a014-b038dd40fa5e",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"date\": \"2024-01-02\",\n  \"description\": \"sqsdfqsdf\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0b559f47-7a97-495c-972f-79dc5875e937",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "733e376b-d115-4feb-bfb3-0e53f4a98ba1",
+            "name": "/bills/:id",
+            "url": "{{url}}/bills/{id}",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-14T12:06:39.193Z",
+            "modified": "2024-06-19T08:06:42.796Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2bccaf6c-a9a3-41ee-9ea2-e6d36f87ec9b",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "98f7f099-94d2-4faf-badf-a246f846bc2c",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "/clients",
+            "url": "{{url}}/clients",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-06-19T07:22:14.678Z",
+            "modified": "2024-06-19T07:31:24.759Z",
+            "headers": []
+        },
+        {
+            "_id": "e242d78a-ea3c-40ad-b484-1d2b970f7e2e",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "/clients/:id",
+            "url": "{{url}}/clients/{id}",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-06-19T07:31:35.139Z",
+            "modified": "2024-06-19T07:32:00.305Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "758d269b-b13b-4ce2-8a0a-237a06db6178",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "66ecbcbc-3317-4591-a54c-aed88fcdad2a",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "/clients",
+            "url": "{{url}}/clients",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-06-19T07:32:32.534Z",
+            "modified": "2024-06-19T14:01:54.345Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"testest\",\n  \"lastName\": \"Riviere\",\n  \"jobTitle\": \"Consultant des interactions interne\",\n  \"phoneNumber\": \"+33 378317005\",\n  \"email\": \"Tonnin_Jacquet@hotmail.fr\",\n  \"company\": \"Vincent SAS\",\n  \"address1\": \"9112 Impasse de Provence\",\n  \"address2\": \"\",\n  \"zipCode\": \"48446\",\n  \"city\": \"Metz\",\n  \"country\": \"Suisse\",\n  \"dateAdded\": \"2022-02-02\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "65d60288-4d4a-457e-a88a-f6af169af2e3",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "/clients/:id",
+            "url": "{{url}}/clients/{id}",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2024-06-19T07:57:00.147Z",
+            "modified": "2024-06-19T08:13:00.876Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "758d269b-b13b-4ce2-8a0a-237a06db6178",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"codePostal\": \"75000\",\n  \"ville\": \"Paris\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9eac96a6-0b94-4f66-a843-c2944cb0b882",
+            "colId": "a87050a3-f0ea-4b4a-8df1-d1ed3beca361",
+            "containerId": "65d75c5c-2396-4a48-9e14-ede901368738",
+            "name": "/clients/:id",
+            "url": "{{url}}/clients/{id}",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-06-19T08:01:07.220Z",
+            "modified": "2024-06-19T08:02:28.281Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "ee5cbb41-cab7-4ee0-963c-8c7d1a5c6109",
+                    "isPath": true
+                }
+            ]
+        }
+    ],
+    "ref": "RD6Z8ZxpByXb7pcUlkZKJzOdj7FXVPYMvpWi0nc1oNnbbq5HvSqMiwf9h_-NM0YxGUmSAdxKKGxAvV1_sh3S_g"
+}
